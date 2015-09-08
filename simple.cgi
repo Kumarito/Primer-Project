@@ -1,30 +1,28 @@
-#This is a little CGI program
+#!/usr/bin/python
+import cgi
 
-#####################################################################
-#The following are environment variables that are available to you
-#
-#CONTENT_TYPE:   The MIME type of associated with the option body of the HTTP request.
-#CONTENT_LENGTH: The length of the query information.
-#GATEWAT_INTERFACE: Currently CGI/1.1
-#HTTP_HOST:      The name of the vhost of the server.
-#HTTP_USER_AGENT: Information about the browser/client that made requested.
-#QUERY_STRING:   The query string.
-#REQUEST_METHOD: The method used to make the request. The most common methods are GET and POST.
-#REQUEST_URI:    The URI of the request
-#SERVER_PROTOCOL: Currently HTTP/1.1
-#SCRIPT_FILENAME: The full path to the CGI script.
-#SCRIPT_NAME:  The name (i.e., URI) of the CGI script.
-#SERVER_NAME:  The server's hostname or IP Address
-#SERVER_PORT:  The port of the server
-
-#    Added a content type adn a blank line
-
-echo "X-Cit-160: hello again Navin!"
-echo "Content-type: text/plain"
-
-echo ""
-
-if [ -n "${QUERY_STRING}" ] ; then cat ./${QUERY_STRING}
-fi
-
-exit 0$
+form = cgi.FieldStorage()
+wish = form.getvalue('wish')
+print "Content-type: text/html"
+print
+print "<br/>"
+print "<center>"
+print "<h1> Wish Master</h1>"
+print "</center>"
+print "<br/>"
+print "<h4>Your wish for ( %s ) shall not be granted. Life isn't fair! </h4/>" %(wish)
+print "<HTML>"
+print "<img src=http://blogs-images.forbes.com/mikemyatt/files/2012/12/Forbes-Image-21.jpg>"
+print "</img>"
+print "<br/>"
+print "<br/>"
+print "<form method=get action=https://www.google.com/search>"
+print "<label> Feel free to do a Google Search for your wish: <input type=text name=q></label>"
+print "<input type=submit value=Submit>"
+print "<br/>"
+print "<label>WARNING: If you are not able to find your wish or buy it, too bad, get glad!</label>"
+print "<br/>"
+print "<br/>"
+print "<label> If you would like to try to enter a wish again,or if you would like to read about the person who didn't grant your wish, please click nowhere. Mwuahaha!\
+</label>"
+print "</HTML>"
