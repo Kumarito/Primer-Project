@@ -20,4 +20,5 @@ Instructions:
 Sources:  
 All pictures seen and links in code were taken through google search.  
 iAmLost.html is my webpage from my current Comp 484 Web Engineering class.
+.htaccess was taken from Professor Fitzgerald's Primer Project Instruction sheet.
 
