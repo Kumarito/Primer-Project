@@ -15,5 +15,9 @@ Instructions:
 2. Two Options:  
      a. Click any hyperlink or image to go to approrpiate website or click the submit button on the bottom of the page to               reefresh the page.  
      b. Enter a wish in text field on top of the page. Upon pressing submit, the CGI script will run and a new html page will  
-        display along with an image from a remote server.
+        display along with an image from a remote server.  
+  
+Sources:  
+All pictures seen and links in code were taken through google search.  
+iAmLost.html is my webpage from my current Comp 484 Web Engineering class.
 
