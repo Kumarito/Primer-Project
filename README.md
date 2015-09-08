@@ -6,3 +6,5 @@ Comp 490 Primer Project: Navin
 9/5/2015: Ran Professor Fitzgerald's simple.cgi example.  
 9/5/2015: Added a html webpage I created in my Comp 484 class to cgi-bin directory: http://www.csun.edu/~nkr49659/cgi-bin/    
 9/6/2015: Embedded Professor Fitzgerald's simple.cgi in my Comp 484 html webpage
+9/6/2015: Learned how to create style sheet external to html page and link with html page  
+
